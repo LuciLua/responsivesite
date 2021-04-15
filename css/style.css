@@ -285,34 +285,40 @@ body{
 @media only screen and (max-width: 600px) {
 
     .initOne h1{
+        position: relative;
         display: flex;
         z-index: 100;
-        align-items: center;
-        font-size: 5vw;
+        font-size: 5vh;
+        background-color: #ff0051;
     }
    
     .initOne .align-video{
         max-width: 100%;
+        height: 100%;
+        background-color: #00a6ff;
         border: none;
         margin: 0;
         padding: 0;
-        position: absolute;
+        position: relative;
         z-index: 10;
-        align-items: stretch;
-        justify-content: stretch;
         top: 0px;
     }
     .initOne .align-video .video{
-        min-width: 100%;
-        width:  400%;
-        height: fit-content;
         border: none;
-        position: absolute;        
+        position: absolute;
+        width: fit-content;
+        height: fit-content;
+        min-height: 100%;
+        background-color: rgb(53, 109, 109);
+        z-index: 10;
     }
 
     .initOne{
         overflow: hidden;
-
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
     }
    
    
@@ -345,6 +351,7 @@ body{
         position: relative;
         margin: 15px;
         align-items: center;
+        padding-top: 1px;
     }
     .col-right .ball-img{
         position: relative;
@@ -357,8 +364,9 @@ body{
         object-fit: cover;
         margin-right: auto;
         margin-left: auto;
-        margin-top: 0;    
     }
+   
+    
     .init #menu{
         display: block;
         position: fixed;
