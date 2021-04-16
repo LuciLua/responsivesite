@@ -361,6 +361,22 @@ body{
         width: 100vh;
         height: 100vh;
         letter-spacing: 10px;
+        font-weight: 800;
+        font-family: Arial;
+    }
+
+    .initOne h3{
+        z-index: 99;
+        position: absolute;
+        display: flex;
+        width: 50vh;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(rgba(184, 64, 64, 0) 10%, rgb(255, 254, 254) 40%, rgba(143, 188, 10, 0) 80%);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        
     }
    
     .initOne .align-video{
