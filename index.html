@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resposive site | Luci</title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
-</head>
+    </head>
 <body>
     <header class="init">
         <div id="menu">
-            <a href="#menu" class="toggle" onclick="toggleMenu()"><i class="fa fa-bars" aria-hidden="true"></i></a>
+            <a href="#menu" class="toggle" onclick="toggleMenu()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+              </svg></a>
         </div>
         <ul class="ul-p">
             <li class="li-m" id="home">
@@ -36,6 +36,7 @@
     </header>
     <div class="initOne">
         <h1>Site responsivo</h1>
+        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ipsum voluptates saepe possimus facere distinctio quos eaque et blanditiis quae commodi illum animi cumque explicabo praesentium suscipit eum, odit alias.</h3>
         <div class="align-video">
             <div class="video">
                 <video src="img/videos/BOL.mp4" muted autoplay loop></video>
@@ -89,16 +90,41 @@
                 <img src="img/py.webp" alt="">
             </div> 
         </div>
-        <div class="col-right">
-            <div class="ball-img">
-                <img src="img/copo.jpeg" alt="">
+        <div class="cols">
+            <div class="col-right">
+                <div class="ball-img">
+                    <img src="img/copo.jpeg" alt="">
+                </div>
+                    <h1>Um pouco sobre mim</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, beatae. Dignissimos ut temporibus accusamus qui quod id ipsam perspiciatis ullam rem ducimus! Nesciunt totam saepe perspiciatis consequatur! Eaque, error beatae.</p>
+                <div class="btn">
+                <a id="git" href="https://www.github.com/LuciLua"><button class="btn-s" >GitHub</button></a>
+                <a id="ln" href="https://www.linkedin.com"><button class="btn-s" >Linkedin</button></a>
+                </div>
             </div>
-            <h1>Um pouco sobre mim</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, beatae. Dignissimos ut temporibus accusamus qui quod id ipsam perspiciatis ullam rem ducimus! Nesciunt totam saepe perspiciatis consequatur! Eaque, error beatae.</p>
-        <div class="btn">
-            <a id="git" href="https://www.github.com/LuciLua"><button class="btn-s" >GitHub</button></a>
-            <a id="ln" href="https://www.linkedin.com"><button class="btn-s" >Linkedin</button></a>
-        </div>
+            <div class="col-right">
+                    <h1 id="rec">Postagens recentes</h1>
+                    <p>
+                        <div class="search">
+                            <input class="inp-col-second" type="text" placeholder="Pesquise aqui">
+                        </div>
+                        <ul class="second-col-ul">
+                            Janeiro
+                            <li><a href="">Google</a></li>
+                            <li><a href="">Google</a></li>
+                            <li><a href="">Google</a></li>
+                            <br>
+                            Fevereiro
+                            <li><a href="">Google</a></li>
+                            <li><a href="">Google</a></li>
+                            <br>
+                            Março
+                            <li><a href="">Google</a></li>
+                            <li><a href="">Google</a></li>
+                            <li><a href="">Google</a></li>
+                        </ul>
+                    </p>
+            </div>
         </div>
     </div>
 </body>
