@@ -61,25 +61,6 @@ body{
 
 }
 
-.init #menu{
-    width: 50px;
-    height: 50px;
-    display: none;
-    text-decoration: none;
-    padding: 10px 26px;
-    background-color: #1a9adf;
-    border-radius: 5px;
-    position: relative;
-    box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.212);
-}
-
-.init #menu a{
-    color: #fff;
-    text-decoration: none;
-    position: relative;
-    text-align: center;
-}
-
 .initOne{
     width: 100%;
     height: 600px;
@@ -282,12 +263,24 @@ body{
 
 @media only screen and (max-width: 600px) {
 
+    .initOne{
+        height: 100vh;
+        position: relative;
+        background-color: #00a6ff;
+        width: 100%!important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
     .initOne h1{
         position: relative;
         display: flex;
         z-index: 100;
         font-size: 5vh;
-        background-color: #ff0051;
+        background-color: #ff005133;
+        width: 100vh;
+        letter-spacing: 10px;
     }
    
     .initOne .align-video{
@@ -363,32 +356,41 @@ body{
         margin-right: auto;
         margin-left: auto;
     }
-   
+ 
     
     .init #menu{
+        width: 50px;
+        height: 50px;
+        position: relative;
         display: block;
         position: fixed;
-        z-index: 1000;
-        top: 10px;
-        left: 10px;
-        text-align: center;
-        border-radius: 0px;
         background-color: transparent;
+        top: 25px;
+        left: 10px;
     }
 
     .init #menu a{
-        padding: 12px 5px;
-        border-radius: 6px;
-        left: -28px;
-        top: 2px;
-        background-color: #FF0051;
+        padding: 13px 20px;
+        position: relative;
+        border-radius: 5px;
+        left: -0px;
+        top: 0px;
+        background-color: #123572;
+        color: #fff;
+        text-decoration: none;
+        position: relative;
+        text-align: center;
     }
 
     .init #menu a.active{
-        padding: 20px 250px;
+        position: absolute;
         border-radius: 0px;
-        left: -28px;
-        top: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 60px;
+        top: -25px;
     }
 
     .init .ul-p .li-m a, .init .ul-right .li-m a{
@@ -406,12 +408,12 @@ body{
         transition: 0.5s;
         align-items: center;
         justify-content: center;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.208);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.687);
     }
 
     .init #menu.active ~ ul{
-        margin: 0;
-        background-color: rgba(16, 16, 16, 0.968);
+        margin: -0.3px;
+        background-color: rgba(0, 27, 74, 0.968);
     }
 
     .init #menu.active{
@@ -436,11 +438,11 @@ body{
         flex-direction: column;
     }
     .init .ul-p{
-        margin-top: 60px!important;
+        margin-top: 50px!important;
     }
     
     .init .ul-right{
-        margin-top: 0;
+        margin-top: 0px!important;
     }
 
     .init .ul-p, .init .ul-right{
@@ -460,7 +462,7 @@ body{
     } */
 
     .init .ul-p .li-m:hover, .init .ul-right .li-m:hover{
-        background-color: #FF0051;
+        background-color: #0c0b1f;
     }
 
     .init .ul-right{
